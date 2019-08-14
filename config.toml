@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://devdash.doc/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "DevDash Documentation"
 theme = "hugo-theme-learn"
 
 [params]
