@@ -3,7 +3,18 @@ title: Github
 weight: 20
 ---
 
-### Widgets available
+## Authorization
+
+1. Go to your Github account in your favorite browser
+2. Click on your avatar (top right corner)
+3. Click on "Settings"
+4. Click on "Developer settings"
+5. Click on "Personal access tokens"
+6. You don't need to select any scope for DevDash, except if you want to read data from your private repositories.
+7. Generate a **new token you will add in your DevDash configuration**.
+
+
+## Widgets available
 
 | Name                      | Description                                                                       | Comment                                                                       |
 | ------------------------  | --------------------------------------------------------------------------------  | ----------------------------------------------------------------------------- |
@@ -16,11 +27,11 @@ weight: 20
 | github.bar_views   | Github traffic of the repository's page the last 14 days                          | Doesn't accept start_date / end_date option                                   |
 | github.bar_commits        | Give the number of commit per week (maximum last 52 weeks)                        | stard_date / end_date option must be "x_weeks_go" or "today". x must be < 52  |
 
-### Widget Options
+## Widget Options
 
-#### Table Widgets
+### Table Widgets
 
-##### Data Options
+#### Data Options
 
 | Name            | Description                    | Default value                        | Examples                                          | Not available for                                  |
 | --------------- | ------------------------------ | ------------------------------------ | ------------------------------------------------- | -------------------------------------------------- |
@@ -28,7 +39,7 @@ weight: 20
 | order           | Order of the list              | `updated`                            | `created`, `updated`, `pushed`, `full_name`       | `github.table_branches`, `github.table_issues`     |
 | metrics         | Column display                 | `stars,watchers,forks,open_issues`   | `stars,forks`                                     | `github.table_branches`, `github.table_issues`     |
 
-##### Display Options
+#### Display Options
 
 | Name               | Description      | Default value                   | Examples                                      |
 | ------------------ | ---------------- | ------------------------------- | --------------------------------------------- |
@@ -37,16 +48,16 @@ weight: 20
 | border_color       | Border color     | `Default color`                 | `yellow`, `red` (see [colors](#colors))       |
 | text_color         | Text color       | `Default color`                 | `yellow`, `red` (see [colors](#colors))       |
 
-#### Bar Widgets
+### Bar Widgets
 
-##### Data Options
+#### Data Options
 
 | Name            | Description                                                                   | Default value     | Examples                                 | Not available for                                        |
 | --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
 | start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              | github.bar_views                                  |
 | end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              | github.bar_views                                  |
 
-##### Display Options
+#### Display Options
 
 | Name              | Description                                                   | Default value                 | Examples                                    |
 | ----------------- | ------------------------------------------------------------- | ----------------------------- | ------------------------------------------- |
