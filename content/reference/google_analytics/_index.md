@@ -1,6 +1,6 @@
 ---
 title: Google Analytics
-weight: 10
+weight: 4 
 ---
 
 ## Authorization
@@ -8,6 +8,8 @@ weight: 10
 Obviously, you need to have a Google Analytics account or Google Search account to access these two services.
 
 ### Downloading the authorization JSON file 
+
+(You don't need to repeat this step if you already did it when configuring Google Search Console)
 
 1. Go to [Google APIs Credentials](https://console.developers.google.com/apis/api/webmasters.googleapis.com/credentials).
 2. Select `Service account key`.
@@ -27,7 +29,6 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 5. Click on user management of the same column.
 6. Enter the email address you saved before (the `Service account ID` of step 7, above).
 7. Click on `View settings` on the `View` column and copy the `View ID` into your **DevDash configuration file**.
-
 
 ## Service configuration
 
@@ -59,8 +60,6 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 
 ### Bar Widgets
 
-#### Data Options
-
 | Name            | Description                                                                   | Default value     | Examples                                 | Not available for                                        |
 | --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
 | start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              |                                                          |
@@ -70,24 +69,7 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 | dimensions      | Google analytics dimensions. Multiple value possible separated with a comma   |                   | `page_path`, `user_types`                | `ga.bar_pages`, `ga.bar_bounces`, `ga.bar_returning`     |
 | filters         | Query filter (prefix `-` to exclude)                                          |                   | `value`, `-value`                        |                                                          |
 
-#### Display Options
-
-| Name              | Description                                                   | Default value                 | Examples                                    |
-| ----------------- | ------------------------------------------------------------- | ----------------------------- | ------------------------------------------- |
-| title             | Title                                                         | `Depending on the widget`     | `Users `                                    |
-| border_color      | Border color                                                  | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| height            | Height                                                        | `10`                          | `5`                                         |
-| title_color       | Title color                                                   | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| text_color        | Text color                                                    | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| num_color         | Color of numerical data                                       | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| empty_num_color   | Color of numerical data when the bar is too small to appear   | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| bar_color         | Bar color                                                     | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| bar_gap           | Gap size between the bars                                     | `0`                           | `5`, `10`                                   |
-| bar_width         | Bar width                                                     | `6`                           | `5`, `10`                                   |
-
 ### Table widgets
-
-#### Data Options
 
 | Name              | Description                                                                 | Default value                                       | Examples                                       | Not used by                  |
 | ----------------- | --------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------- | ---------------------------- |
@@ -100,32 +82,11 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 | row_limit         | Limit the number of rows                                                    | 5                                                   | 5, 100                                         |                              |
 | character_limit   | Limit the number of characters of the dimension column                      | 20                                                  | 100, 200                                       |                              |
 
-#### Display Options
-
-| Name             | Description    | Default value                 | Examples                                    |
-| ---------------- | -------------- | ----------------------------- | ------------------------------------------- |
-| title            | Title          | `Depending on the widget`     | `Users `                                    |
-| title_color      | Title color    | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| border_color     | Border color   | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-| text_color       | Text color     | `Default color`               | `yellow`, `red` (see [colors](#colors))     |
-
 ### Box widgets
-
-#### Data Options
 
 | Name             | Description                       | Default value   | Examples                               |
 | ---------------- | --------------------------------- | --------------- | -------------------------------------- |
 | start_date       | Start date of time period         | `7_days_ago`    | `2018-01-01`, `2_weeks_ago`            |
 | end_date         | End date of time period           | `today`         | `2018-01-31`, `2_weeks_ago`            |
 | metric           | Google analytics' metric          | `sessions`      | `page_views`, `bounces`, `entrances`   |
-
-#### Display Options
-
-| Name               | Description        | Default value                       | Examples                                  |
-| ------------------ | ------------------ | ----------------------------------- | ----------------------------------------- |
-| title              | Title              | `Depending on the widget`           | `Users `                                  |
-| height             | Height             | `10`                                | `5`                                       |
-| title_color        | Title color        | `Default color`                     | `yellow`, `red` (see [colors](#colors))   |
-| border_color       | Border color       | `Default color`                     | `yellow`, `red` (see [colors](#colors))   |
-| text_color         | Text color         | `Default color`                     | `yellow`, `red` (see [colors](#colors))   |
 

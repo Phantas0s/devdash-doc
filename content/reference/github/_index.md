@@ -1,6 +1,6 @@
 ---
 title: Github
-weight: 20
+weight: 3 
 ---
 
 ## Authorization
