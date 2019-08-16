@@ -181,5 +181,4 @@ projects:
                     title_color: blue
                     row_limit: 19
 ```
-{{% /expand%}}
-
+{{% expand%}}

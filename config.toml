@@ -5,3 +5,6 @@ theme = "hugo-theme-learn"
 
 [params]
   themeVariant = "green"
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
