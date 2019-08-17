@@ -31,45 +31,16 @@ weight: 3
 
 ### Table Widgets
 
-#### Data Options
-
 | Name            | Description                        | Default value                        | Examples                                          | Not available for                                  |
 | --------------- | ------------------------------     | ------------------------------------ | ------------------------------------------------- | -------------------------------------------------- |
 | row_limit       | Limit the number of rows           | 5                                    | 5, 100                                            |                                                    |
 | order           | Order of the list                  | `updated`                            | `created`, `updated`, `pushed`, `full_name`       | `github.table_branches`, `github.table_issues`     |
 | metrics         | Column display                     | `stars,watchers,forks,open_issues`   | `stars,forks`                                     | `github.table_branches`, `github.table_issues`     |
-| scope           | Owner commits or everybody commits | `owner`                              | `owner`, `all`                                    | Anything except `github.bar_commits`               |
-
-#### Display Options
-
-| Name               | Description      | Default value                   | Examples                                      |
-| ------------------ | ---------------- | ------------------------------- | --------------------------------------------- |
-| title              | Title            | `Depending on the widget`       | `Users `                                      |
-| title_color        | Title color      | `Default color`                 | [colors](/display/colors/)                    |
-| border_color       | Border color     | `Default color`                 | [colors](/display/colors/)                    |
-| text_color         | Text color       | `Default color`                 | [colors](/display/colors/)                    |
 
 ### Bar Widgets
-
-#### Data Options
 
 | Name            | Description                                                                   | Default value     | Examples                                 | Not available for                                        |
 | --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
 | start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              | github.bar_views                                         |
 | end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              | github.bar_views                                         |
-
-#### Display Options
-
-| Name              | Description                                                   | Default value                 | Examples                                    |
-| ----------------- | ------------------------------------------------------------- | ----------------------------- | ------------------------------------------- |
-| title             | Title                                                         | `Depending on the widget`     | `Users `                                    |
-| border_color      | Border color                                                  | `Default color`               | [colors](/display/colors/)                  |
-| height            | Height                                                        | `10`                          | `5`                                         |
-| title_color       | Title color                                                   | `Default color`               | [colors](/display/colors/)                  |
-| text_color        | Text color                                                    | `Default color`               | [colors](/display/colors/)                  |
-| num_color         | Color of numerical data                                       | `Default color`               | [colors](/display/colors/)                  |
-| empty_num_color   | Color of numerical data when the bar is too small to appear   | `Default color`               | [colors](/display/colors/)                  |
-| bar_color         | Bar color                                                     | `Default color`               | [colors](/display/colors/)                  |
-| bar_gap           | Gap size between the bars                                     | `0`                           | `5`, `10`                                   |
-| bar_width         | Bar width                                                     | `6`                           | `5`, `10`                                   |
-
+| scope           | Owner commits or everybody commits | `owner`                              | `owner`, `all`                                    | Anything except `github.bar_commits`               |
