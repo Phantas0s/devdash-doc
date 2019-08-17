@@ -1,4 +1,5 @@
 baseURL = "https://thedevdash.com/"
+
 languageCode = "en-us"
 title = "DevDash Documentation"
 theme = "hugo-theme-learn"
