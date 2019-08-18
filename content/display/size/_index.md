@@ -1,6 +1,6 @@
 ---
 title: Size
-weight: 30
+weight: 2 
 ---
 
 # Width

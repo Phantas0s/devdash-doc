@@ -1,9 +1,18 @@
 ---
-title: Examples
-weight: 1000
+title: Use Cases
+weight: 1100
+chapter: false
 ---
 
-![img](/img/screenshot/mix-1.png)
+I use DevDash myself, so here my configurations to help you getting started creating your owns.
+
+## A Wonderful Dashboard for Your Blog
+
+Behold one of my dashboard for the blog [The Valuable Dev](https://thevaluable.dev) (formerly webtechno.net).
+
+DevDash is good to have all the metrics you need for your blog, without having to go into the monstrous interface of Google Analytics.
+
+Just configure what you want... and that's all!
 
 {{%expand "Click to see the config" %}}
 ```yaml
@@ -181,4 +190,6 @@ projects:
                     title_color: blue
                     row_limit: 19
 ```
-{{% expand%}}
+{{% /expand%}}
+
+![img](/img/screenshot/mix-1.png)

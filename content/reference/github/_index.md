@@ -43,4 +43,4 @@ weight: 3
 | --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
 | start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              | github.bar_views                                         |
 | end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              | github.bar_views                                         |
-| scope           | Owner commits or everybody commits | `owner`                              | `owner`, `all`                                    | Anything except `github.bar_commits`               |
+| scope           | Owner commits or everybody commits | `owner`                              | `owner`, `all`                                    | Only available for `github.bar_commits`               |

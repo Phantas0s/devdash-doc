@@ -1,6 +1,6 @@
 ---
 title: Colors
-weight: 20
+weight: 3
 ---
 
 The list of colors you can use in DevDash configuration.
