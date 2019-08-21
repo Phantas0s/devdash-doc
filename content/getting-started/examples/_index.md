@@ -3,7 +3,7 @@ title: Examples
 weight: 1000
 ---
 
-Here are some simple examples to get you started. If you need more complex and real use cases, it's [over there](/getting-started/use_cases/).
+Here are some simple examples to get you started. If you need more complex and real use cases, it's [over there](/getting-started/use-cases/).
 
 ## Google Analytics
 
@@ -11,7 +11,7 @@ There are two services used here: the [monitoring service](/reference/monitoring
 
 This first simple example show you how to use two different way or providing the [size](/display/size/) (width) of any widget ("6", "S" and "XS").
 
-As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walkthrough how to obtain these two information [here](/reference/google_analytics/).
+As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walkthrough how to obtain these two information [here](/reference/google-analytics/).
 
 {{%expand "Show me the config!" %}}
 ```yaml
