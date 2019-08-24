@@ -3,6 +3,21 @@ title: Widgets
 weight: 1 
 ---
 
+## Widget types 
+
+Every widget has a type, which will determine its display. The type is included in the widget's name.
+
+Here are all the available types:
+
+| Identifier |
+|------------|
+| box        |
+| table      |
+| bar        |
+
+For example, `ga.bar_pages` is a widget attached to the service Google Analytics, and displayed as a bar diagram.Each type of widget has its own display options.
+
+
 ## Box Widgets
 
 | Name           | Description                             | Default value             | Examples                                  |

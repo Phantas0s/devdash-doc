@@ -17,6 +17,22 @@ If you're unsure how should looks like a configuration file, you can go to the s
 
 Many screenshot are included for you to see directly how DevDash can look like.
 
+## DevDash Widgets
+
+Each widget depend on a service: the name of the widget will determine in what service it belongs.
+
+For example, the widget `ga.bar_pages` will belong to the service `google_analytics`.
+
+Here the different services you can find in the widget's names:
+
+| Identifier | service               |
+| ------     | --------------------- |
+| ga         | Google Analytics      |
+| gsc        | Google Search Console |
+| github     | Github                |
+
+The second part of the widget name, `bar` in `ga.bar_pages` determine its display. 
+
 ## DevDash Configuration Structure
 
 This schema illustrate the different level a DevDash configuration has.

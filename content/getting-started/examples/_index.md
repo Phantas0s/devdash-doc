@@ -152,7 +152,7 @@ The Google Search Console service in action! If you want a [complete reference o
 You can see as well some display options for the project title as well (`title_options`).
 
 {{%expand "Show me the config!" %}}
-```yaml
+```YAML
 ---
 general:
   refresh: 600
