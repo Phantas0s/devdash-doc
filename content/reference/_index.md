@@ -13,7 +13,7 @@ You can find here:
 * The second level is the `project` configuration: it's where you will give its title and declare its `services`.
 * The third and fourth levels are the configuration of the `services` themselves and their `widgets`.
 
-If you're unsure how should looks like a configuration file, you can go to the section [getting started](/getting-started/), and more particularly in its subsections [examples](/getting-started/examples) for simple configuration examples. You will find there as well real life [use-cases](/getting-started/uses-cases) with their complete dashboard configurations.
+If you're unsure how should looks like a configuration file, you can go to the section [getting started](/getting-started/), and more particularly in its subsections [examples](/getting-started/examples) for simple configuration examples. You will find there as well real life [use-cases](/getting-started/use-cases) with their complete dashboard configurations.
 
 Many screenshot are included for you to see directly how DevDash can look like.
 
