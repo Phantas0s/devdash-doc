@@ -46,13 +46,15 @@ You can precise there some display options for the project's name.
 | bold             | Display the title in bold characters      | `true`                      | `true`, `false`                             |
 ## Services
 
-You will add the configuration of your services here. Each service has its own configuration options. [You can find them here](/reference/services/).
+The configuration of your services will be done in the `services` section of the project's configuration. [You can find service's configuration reference here](/reference/services/).
 
 ## Themes
 
-You can create `themes` at the `project` level in the configuration. To have a concrete example of a dashboard with themes, [it's over there](/getting-started/use-cases/devdash/).
+To have a concrete example of a dashboard with themes, [it's over there](/getting-started/use-cases/devdash/).
 
-You can create themes which will be applied to [different type of widgets](/display/widgets/) automatically, as follow.
+You can create themes which will be applied to [different type of widgets](/display/widgets/) automatically.
+
+For example:
 
 ```yaml
 projects:
@@ -75,7 +77,7 @@ projects:
         num_color: red
 ```
 
-You can as well create themes and attach them to precise widgets: 
+You can as well create themes and attach them to some widgets: 
 
 ```yaml
 projects:
