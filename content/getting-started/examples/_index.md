@@ -256,3 +256,4 @@ projects:
 ```
 {{% /expand %}}
 
+![git example](/img/screenshot/git-1.png)
