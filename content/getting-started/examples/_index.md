@@ -7,18 +7,18 @@ Here are some simple examples to get you started. If you need more complex and r
 
 ## Google Analytics
 
-There are two services used here: the [monitoring service](/reference/monitoring/) and the [Google Analytics service](/reference/google-analytics/).
+There are two services used here: the [monitoring service](/reference/services/monitoring/) and the [Google Analytics service](/reference/services/google-analytics/).
 
 This first simple example show you how to use two different way or providing the [size](/display/size/) (width) of any widget ("6", "S" and "XS").
 
-As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walkthrough how to obtain these two information [here](/reference/google-analytics/).
+As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walkthrough how to obtain these two information [here](/reference/services/google-analytics/).
 
 {{%expand "Show me the config!" %}}
 ```yaml
 ---
 projects:
   - name: Example
-    title_options:
+    name_options:
       border_color: default
       text_color: default
       size: XXL
@@ -147,9 +147,7 @@ projects:
 
 ## Google Search Console
 
-The Google Search Console service in action! If you want a [complete reference of its widget and configuration, click here](/reference/google-search-console/).
-
-You can see as well some display options for the project title as well (`title_options`).
+The Google Search Console service in action! If you want a [complete reference of its widget and configuration, click here](/reference/services/google-search-console/).
 
 {{%expand "Show me the config!" %}}
 ```YAML
@@ -207,14 +205,14 @@ projects:
 
 ## Github 
 
-Bring your Github data in DevDash! [Click here to see the whole configuration reference](/reference/github/).
+Bring your Github data in DevDash! [Click here to see the whole configuration reference](/reference/services/github/).
 
 {{%expand "Show me the config!" %}}
 ```yaml
 ---
 projects:
   - name: github
-    title_options:
+    name_options:
       border_color: default
       text_color: default
       size: XXL

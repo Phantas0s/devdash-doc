@@ -11,7 +11,7 @@ projects:
   - name: DevDash
     services:
       github:
-        token: d753dd2f2bde7b6c552df3fb369c20dddc53d03c
+        token: 1234
         owner: Phantas0s
         repository: devdash
     themes:
