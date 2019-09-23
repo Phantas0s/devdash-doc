@@ -32,16 +32,16 @@ weight: 3
 
 ### Table Widgets
 
-| Name            | Description                        | Default value                        | Examples                                          | Not available for                                  |
-| --------------- | ------------------------------     | ------------------------------------ | ------------------------------------------------- | -------------------------------------------------- |
-| row_limit       | Limit the number of rows           | 5                                    | 5, 100                                            |                                                    |
-| order           | Order of the list                  | `updated`                            | `created`, `updated`, `pushed`, `full_name`       | `github.table_branches`, `github.table_issues`     |
-| metrics         | Column display                     | `stars,watchers,forks,open_issues`   | `stars,forks`                                     | `github.table_branches`, `github.table_issues`     |
+| Name            | Description                    | Default value                        | Examples                                          | Availability                                                     |
+| --------------- | ------------------------------ | ------------------------------------ | ------------------------------------------------- | --------------------------------------------------               |
+| row_limit       | Limit the number of rows       | 5                                    | 5, 100                                            |                                                                  |
+| order           | Order of the list              | `updated`                            | `created`, `updated`, `pushed`, `full_name`       | Not available for `github.table_branches`, `github.table_issues` |
+| metrics         | Column display                 | `stars,watchers,forks,open_issues`   | `stars,forks`                                     | Not available for `github.table_branches`, `github.table_issues` |
 
 ### Bar Widgets
 
-| Name            | Description                                                                   | Default value     | Examples                                 | Not available for                                        |
+| Name            | Description                                                                   | Default value     | Examples                                 | Availability                                             |
 | --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
-| start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              | github.bar_views                                         |
-| end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              | github.bar_views                                         |
-| scope           | Owner commits or everybody commits | `owner`                              | `owner`, `all`                                    | Only available for `github.bar_commits`               |
+| start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              | Not available for `github.bar_views`                     |
+| end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              | Not available for `github.bar_views`                     |
+| scope           | Owner commits or everybody commits                                            | `owner`           | `owner`, `all`                           | Only available for `github.bar_commits`                  |
