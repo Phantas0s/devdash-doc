@@ -26,6 +26,7 @@ weight: 3
 | github.table_repositories | Table of all repositories with count different information (see `metrics` option) |                                                                                             |
 | github.bar_views          | Github traffic of the repository's page the last 14 days                          | Doesn't accept start_date / end_date option                                                 |
 | github.bar_commits        | Give the number of commit per week (maximum last 52 weeks)                        | stard_date / end_date option must be "x_weeks_go". x must be a number at least 0 at most 52 |
+| github.bar_stars          | Display stars given to a repository overtime                                      |                                                                                             |
 
 ## Widget Options
 
