@@ -23,7 +23,7 @@ Each widget depend on a service: the name of the widget will determine in what s
 
 For example, the widget `ga.bar_pages` will belong to the service `google_analytics`.
 
-Here the different services you can find in the widget's names:
+Here are the different services you can find in the widget's names:
 
 | Identifier | service               |
 | ------     | --------------------- |

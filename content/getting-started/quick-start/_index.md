@@ -7,7 +7,7 @@ To see DevDash in action and get familiar with the config file, you can easily u
 
 ![img](/img/screenshot/monitor.png)
 
-Here the config to create this (very simple) dashboard:
+Here's the config to create this (very simple) dashboard:
 
 ```yml
 ---

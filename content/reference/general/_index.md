@@ -3,12 +3,12 @@ title: General
 weight: 1
 ---
 
-General configuration of your dashboard.
+This is the general configuration of your dashboard.
 
 | Name       | Description                                             | Default value   | Examples   |
 | ---------- | ------------------------------------------------------- | --------------- | ---------- |
 | refresh    | The cycle's duration of refreshing data, in seconds     | 600             | 600        |
-| reload     | reload the config file at each refresh                  | false           | true       |
+| reload     | Hot reload the config file at each refresh              | false           | true       |
 
 The reload option can be set to `true` if you want to change your dashboard without restarting it (hot reload).
 
