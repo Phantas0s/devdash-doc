@@ -3,7 +3,7 @@ title: Themes
 weight: 1 
 ---
 
-A theme can have any option and can be reused across widgets. 
+A theme is a blueprint for any widget. It can have any option and can be reused across widgets.
 
 For example:
 
@@ -36,21 +36,19 @@ projects:
 
 The themes with the name `ocean` can be used for any widget, as following:
 
-
 ```YAML
 - row:
     - col:
         size: 6
         elements:
         - name: github.bar_views
-            theme: ocean
+          theme: ocean
 ```
 
 The widget `github.bar_views` will inherit the options defined by the theme `ocean`.
 
-A theme can have special names: `bar`, `table` and `box`. These are the names of the different widget types in Devdash.
+A theme can have reserved names: `bar`, `table` and `box`. These are the names of the different widget types in Devdash, too.
 
-If a theme has one of these special name, every widget of the type will inherit the theme's options. For example, if you have a theme `bar`, every `bar` widget will inherit the theme's options
+If a theme has one of these reserved name, every widget of the type will inherit the theme's options. For example, if you have a theme `bar`, every `bar` widget will have the options of the theme.
 
-If the widget and the widget's theme has some options in common, the options from the widget will override the ones from the theme. 
-You can use this property to use a theme for many widgets and override some options for some precise widgets.
+If the widget and the widget's theme have options in common, the widget's options will override the ones from the theme.

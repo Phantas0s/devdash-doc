@@ -3,15 +3,15 @@ title: Examples
 weight: 1000
 ---
 
-Here are some simple examples to get you started. If you need more complex and real use cases, it's [over there](/getting-started/use-cases/).
+Here are some simple examples to get you started. Some more complex and real use cases are [available as well](/getting-started/use-cases/).
 
 ## Google Analytics
 
-There are two services used here: the [monitoring service](/reference/services/monitoring/) and the [Google Analytics service](/reference/services/google-analytics/).
+For the first example, two services are used: the [monitoring service](/reference/services/monitoring/) and the [Google Analytics service](/reference/services/google-analytics/).
 
-This first simple example show you how to use two different way or providing the [size](/display/size/) (width) of any widget ("6", "S" and "XS").
+It will show how to use two different way or providing the [size](/display/size/) (width) of any widget (using a number from 1 to 12, or a T-shirt size).
 
-As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walkthrough how to obtain these two information [here](/reference/services/google-analytics/).
+As you can see, you need to provide a `keyfile` and a `view_id` for the service `google_analytics`. There is a walk through how to obtain these two information [here](/reference/services/google-analytics/).
 
 {{%expand "Show me the config!" %}}
 ```yaml
@@ -66,16 +66,15 @@ projects:
                     metric: "users"
 ```
 {{% /expand%}}
-
 ![img](/img/screenshot/ga-1.png)
 
 -------
 
-The second example shows you how to configure the display of your widgets, using options like `border_color`, `text_color`, `bar_width` or `bar_height`. 
+The second example shows how to configure the display of your widgets, using options like `border_color`, `text_color`, `bar_width` or `bar_height`. 
 
-It introduces as well the `general` configuration, where you can provide the keys to use to quit devdash (`C-c` is ctrl-c) as well as the refresh cycle of your entire dashboard, in seconds.
+It introduces as well the `general` configuration, where you can modify the default the keyboard shortcut to quit devdash (`C-c` is ctrl-c) as well as the refresh cycle of your dashboard's data, in seconds.
 
-You can see a [complete reference of these properties here](/display/widgets/).
+You can see a [complete reference of these properties here](/reference/general/).
 
 {{%expand "Show me the config!" %}}
 ```yaml
@@ -147,7 +146,7 @@ projects:
 
 ## Google Search Console
 
-The Google Search Console service in action! If you want a [complete reference of its widget and configuration, click here](/reference/services/google-search-console/).
+The Google Search Console service in action! If you want a complete reference of its widget and configuration, [it's over here](/reference/services/google-search-console/).
 
 {{%expand "Show me the config!" %}}
 ```YAML
@@ -203,7 +202,7 @@ projects:
 
 ![img](/img/screenshot/gsc-1.png)
 
-## Github 
+## Github
 
 Bring your Github data in DevDash! [Click here to see the whole configuration reference](/reference/services/github/).
 

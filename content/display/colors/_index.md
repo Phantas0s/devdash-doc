@@ -3,9 +3,9 @@ title: Colors
 weight: 3
 ---
 
-The list of colors you can use in DevDash configuration.
+You can use the following colors for any DevDash dashboard.
 
-Their display will depend of the colors you've configured for your terminal.
+Their display will depend of the configuration of your Terminal's colors.
 
 | Name    |
 |---------|

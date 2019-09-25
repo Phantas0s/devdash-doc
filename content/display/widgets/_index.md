@@ -15,9 +15,9 @@ The available types are:
 | table      |
 | bar        |
 
-For example, `ga.bar_pages` is a widget attached to the service Google Analytics (`ga`), and it's a bar diagram. 
+For example, `ga.bar_pages` is a widget attached to the service Google Analytics (`ga`), and it's a `bar` diagram.
 
-Each type of widget has its own display options.
+Each type of widget has its own display options. Here's the exhaustive list:
 
 ## Box Widgets
 
@@ -32,13 +32,13 @@ Each type of widget has its own display options.
 
 ## Table Widgets
 
-| Name               | Description      | Default value                   | Examples                                      |
-| ------------------ | ---------------- | ------------------------------- | --------------------------------------------- |
-| title              | Title            | `Depending on the widget`       | `Users `                                      |
-| color          | Global color for title, border and text | `Default color`           | [colors](/display/colors)                 |
-| title_color        | Title color      | `Default color`                 | [colors](/display/colors)                     |
-| border_color       | Border color     | `Default color`                 | [colors](/display/colors)                     |
-| text_color         | Text color       | `Default color`                 | [colors](/display/colors)                     |
+| Name               | Description                             | Default value                   | Examples                                      |
+|--------------------|-----------------------------------------|---------------------------------|-----------------------------------------------|
+| title              | Title                                   | `Depending on the widget`       | `Users `                                      |
+| color              | Global color for title, border and text | `Default color`                 | [colors](/display/colors)                     |
+| title_color        | Title color                             | `Default color`                 | [colors](/display/colors)                     |
+| border_color       | Border color                            | `Default color`                 | [colors](/display/colors)                     |
+| text_color         | Text color                              | `Default color`                 | [colors](/display/colors)                     |
 
 ## Bar Widgets
 
