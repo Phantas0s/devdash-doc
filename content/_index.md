@@ -5,7 +5,7 @@ draft = false
 
 ![DevDash logo](/img/logo.jpg)
 
-## Welcome to the DevDash's Documentation
+## Welcome to DevDash's Documentation
 
 **DevDash is a highly configurable terminal dashboard for developers**.
 
