@@ -2,7 +2,7 @@
 title: DevDash
 ---
 
-DevDash is on Github, therefore I use this dashboard to monitor the project, especially when I speak about it on social media.
+I use this dashboard to monitor DevDash on Github, especially when I write about it on social media.
 
 {{%expand "I want the config!" %}}
 ```YAML

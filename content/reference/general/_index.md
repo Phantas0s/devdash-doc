@@ -3,7 +3,7 @@ title: General
 weight: 1
 ---
 
-This is the general configuration of your dashboard.
+This reference the general configuration for your dashboards.
 
 | Name       | Description                                             | Default value   | Examples   |
 | ---------- | ------------------------------------------------------- | --------------- | ---------- |
@@ -11,16 +11,17 @@ This is the general configuration of your dashboard.
 | reload     | Hot reload the config file at each refresh              | false           | true       |
 
 The reload option can be set to `true` if you want to change your dashboard without restarting it (hot reload).
+This will allow you to change the dashboard configuration without the need to restart DevDash itself.
 
-## Keys
+## Keystrokes
 
-You can map some keyboard key to some action as following:
+You can map some keystrokes to some action as following:
 
 | Name | Description         | Default value | Examples   |
 |------|---------------------|---------------|------------|
 | quit | Key to quit DevDash | `C-c`         | `C-x`, `q` |
 
-## Example
+## Configuration Example
 
 ```yaml
 general:

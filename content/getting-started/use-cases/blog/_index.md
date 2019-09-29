@@ -4,13 +4,9 @@ weight: 1100
 chapter: false
 ---
 
-Behold some dashboards I have for my blog [The Valuable Dev](https://thevaluable.dev) (formerly webtechno.net).
+Here are dashboards I use for my blog [The Valuable Dev](https://thevaluable.dev) (formerly `webtechno.net`).
 
 DevDash is good to have all the metrics you need for your blog, without having to go into the monstrous interface of Google Analytics.
-
-Just configure what you want... and that's all!
-
-For information, I run all these dashboards at the same time all day long, with a refresh occurring every 10 minutes without any problem.
 
 ### General Dashboard
 
