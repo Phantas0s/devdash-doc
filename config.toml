@@ -12,3 +12,9 @@ theme = "hugo-theme-learn"
 
 [blackfriday]
   hrefTargetBlank = true
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-github'></i> Github"
+identifier = "ds"
+url = "https://github.com/Phantas0s/devdash"
+weight = 10
