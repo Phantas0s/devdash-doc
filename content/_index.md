@@ -7,11 +7,13 @@ draft = false
 
 **DevDash is a highly configurable terminal dashboard for developers**.
 
-It will allow you to choose and display the most up-to-date metrics you need, at one place.
+It will allow you to choose and display the most up-to-date metrics you need, at one place, from:
+
+* Google Analytics
+* Google Search Console
+* Github
 
 The data will be automatically refreshed while you're doing other productive tasks.
-
-What can you do with this documentation?
 
 * To get started and creating your first dashboard, or see DevDash in action with many examples (including their configuration), [it's over there](/getting-started/).
 * If you search the complete reference for DevDash dashboard's configuration, [you need to click on this link](/reference/).
