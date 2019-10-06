@@ -4,9 +4,6 @@ languageCode = "en-us"
 title = "DevDash Documentation"
 theme = "hugo-theme-learn"
 
-[params]
-  googleAnalyticsUserID= "UA-46898153-8"
-
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
 
