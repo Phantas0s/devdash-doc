@@ -1,11 +1,9 @@
 +++
-title = "Welcome to DevDash"
+title = "Welcome to DevDash Documentation!"
 draft = false
 +++
 
 ![DevDash logo](/img/logo.jpg)
-
-## Welcome to DevDash's Documentation
 
 **DevDash is a highly configurable terminal dashboard for developers**.
 
@@ -20,4 +18,7 @@ What can you do with this documentation?
 * In order to change the display of your widgets (colors or size), [you can directly go here](/display/).
 * Finally, to understand how to use time period for many widgets in DevDash, [you can go there](/time/).
 
+Do you have ideas for new features? Do you need any help? Do you want to be part of the DevDash community? Come participate on [DevDash's Discord channel](https://discord.gg/aFHJ7ec).
+
 ![example of real DevDash dashboard](/img/screenshot/mix-1.png)
+
