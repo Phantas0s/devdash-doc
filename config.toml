@@ -13,14 +13,20 @@ theme = "hugo-theme-learn"
 [blackfriday]
   hrefTargetBlank = true
 
-[[menu.shortcuts]] 
+[[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github"
-identifier = "ds"
+identifier = "gs"
 url = "https://github.com/Phantas0s/devdash"
 weight = 10
 
-[[menu.shortcuts]] 
+[[menu.shortcuts]]
+name = "<i class='fab fa-discord'></i> Discord Community"
+identifier = "ds"
+url = "https://discord.gg/aFHJ7ec"
+weight = 20
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-envelope-open'></i> Newsletter"
 identifier = "ns"
 url = "/newsletter/"
-weight = 20
+weight = 30
