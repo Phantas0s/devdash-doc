@@ -26,6 +26,18 @@
 
     <script src="{{"js/jquery-3.3.1.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {{with  .Site.Params.googleAnalyticsUserID }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46898153-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{.}}');
+    </script>
+    {{end}}
+
     <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
