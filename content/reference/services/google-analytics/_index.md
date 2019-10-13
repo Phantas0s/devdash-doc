@@ -60,33 +60,32 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 
 ### Bar Widgets
 
-| Name            | Description                                                                   | Default value     | Examples                                 | Not available for                                        |
-| --------------- | ----------------------------------------------------------------------------- | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
-| start_date      | Start date of time period                                                     | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              |                                                          |
-| end_date        | End date of time period                                                       | `today`           | `2018-01-31`, `2_weeks_ago`              |                                                          |
-| time_period     | Time period represented by a bar                                              | `days`            | `days`, `months`, `years`                |                                                          |
-| metric          | Google analytics metric                                                       | `sessions`        | `page_views`, `bounces`, `entrances`     | `ga.bar_pages`, `ga.bar_returning`                       |
-| dimensions      | Google analytics dimensions. Multiple value possible separated with a comma   |                   | `page_path`, `user_types`                | `ga.bar_pages`, `ga.bar_bounces`, `ga.bar_returning`     |
-| filters         | Query filter (prefix `-` to exclude)                                          |                   | `value`, `-value`                        |                                                          |
+| Name            | Description                                                                    | Default value     | Examples                                 | Not available for                                        |
+| --------------- | -----------------------------------------------------------------------------  | ----------------- | ---------------------------------------- | -------------------------------------------------------- |
+| start_date      | Start date of time period                                                      | `7_days_ago`      | `2018-01-01`, `2_weeks_ago`              |                                                          |
+| end_date        | End date of time period                                                        | `today`           | `2018-01-31`, `2_weeks_ago`              |                                                          |
+| time_period     | Time period represented by a bar                                               | `days`            | `days`, `months`, `years`                |                                                          |
+| metric          | Google analytics metric                                                        | `sessions`        | `page_views`, `bounces`, `entrances`     | `ga.bar_pages`, `ga.bar_returning`                       |
+| dimensions      | Google analytics dimensions. Multiple value possible separated with a comma    |                   | `page_path`, `user_types`                | `ga.bar_pages`, `ga.bar_bounces`, `ga.bar_returning`     |
+| filters         | Query filter (prefix `-` to exclude)                                           |                   | `value`, `-value`                        |                                                          |
 
 ### Table widgets
 
-| Name              | Description                                                                 | Default value                                       | Examples                                       | Not used by                  |
-| ----------------- | --------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------- | ---------------------------- |
-| start_date        | Start date of time period                                                   | `7_days_ago`                                        | `2018-01-01`, `2_weeks_ago`                    |                              |
-| end_date          | End date of time period                                                     | `today`                                             | `2018-01-31`, `2_weeks_ago`                    |                              |
-| metrics           | Google analytics metrics. Multiple values possible separated with a comma   | `sessions,page_views,entrances,unique_page_views`   | `bounces,sessions`, `entrances`                |                              |
-| dimension         | Google analytics dimension                                                  | `page_path`                                         | `2018-01-31`, `2_weeks_ago`                    | `ga.table_traffic_sources`   |
-| orders            | Order of the result. Multiple value possible separated with a comma         | `sessions desc`                                     | `sessions desc,page_views asc`. `page_views`   |                              |
-| filters           | Query filter (prefix `-` to exclude)                                        |                                                     | `value`, `-value`                              |                              |
-| row_limit         | Limit the number of rows                                                    | 5                                                   | 5, 100                                         |                              |
-| character_limit   | Limit the number of characters of the dimension column                      | 20                                                  | 100, 200                                       |                              |
+| Name            | Description                                                                    | Default value                                     | Examples                                     | Not used by                |
+|-----------------|--------------------------------------------------------------------------------|---------------------------------------------------|----------------------------------------------|----------------------------|
+| start_date      | Start date of time period                                                      | `7_days_ago`                                      | `2018-01-01`, `2_weeks_ago`                  |                            |
+| end_date        | End date of time period                                                        | `today`                                           | `2018-01-31`, `2_weeks_ago`                  |                            |
+| metrics         | Google analytics metrics. Multiple values possible separated with a comma      | `sessions,page_views,entrances,unique_page_views` | `bounces,sessions`, `entrances`              |                            |
+| dimension       | Google analytics dimension                                                     | `page_path`                                       | `2018-01-31`, `2_weeks_ago`                  | `ga.table_traffic_sources` |
+| orders          | Order of the result. Multiple value possible separated with a comma            | `sessions desc`                                   | `sessions desc,page_views asc`. `page_views` |                            |
+| filters         | Query filter (prefix `-` to exclude)                                           |                                                   | `value`, `-value`                            |                            |
+| row_limit       | Limit the number of rows                                                       | 5                                                 | 5, 100                                       |                            |
+| character_limit | Limit the number of characters of the dimension column                         | 20                                                | 100, 200                                     |                            |
 
 ### Box widgets
 
-| Name             | Description                       | Default value   | Examples                               |
-| ---------------- | --------------------------------- | --------------- | -------------------------------------- |
-| start_date       | Start date of time period         | `7_days_ago`    | `2018-01-01`, `2_weeks_ago`            |
-| end_date         | End date of time period           | `today`         | `2018-01-31`, `2_weeks_ago`            |
-| metric           | Google analytics' metric          | `sessions`      | `page_views`, `bounces`, `entrances`   |
-
+| Name             | Description                                                                    | Default value   | Examples                               |
+|------------------|--------------------------------------------------------------------------------|-----------------|----------------------------------------|
+| start_date       | Start date of time period                                                      | `7_days_ago`    | `2018-01-01`, `2_weeks_ago`            |
+| end_date         | End date of time period                                                        | `today`         | `2018-01-31`, `2_weeks_ago`            |
+| metric           | Google analytics' metric                                                       | `sessions`      | `page_views`, `bounces`, `entrances`   |
