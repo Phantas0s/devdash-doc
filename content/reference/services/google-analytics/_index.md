@@ -1,6 +1,6 @@
 ---
 title: Google Analytics
-weight: 4 
+weight: 5 
 ---
 
 ## Authorization

@@ -1,6 +1,6 @@
 ---
 title: Google Search Console
-weight: 5 
+weight: 6 
 ---
 
 ## Authorization
