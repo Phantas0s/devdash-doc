@@ -24,6 +24,44 @@ projects:
                     border_color: green
 ```
 
+Note that you can write the config in JSON, too. Here's an example:
+
+```json
+{
+  "projects": [
+    {
+      "name": "Quickstart",
+      "services": {
+        "monitor": {
+          "address": "https://thevaluable.dev"
+        }
+      },
+      "widgets": [
+        {
+          "row": [
+            {
+              "col": {
+                "size": "M",
+                "elements": [
+                  {
+                    "name": "mon.box_availability",
+                    "options": {
+                      "border_color": "green"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Every config in this documentation are written in YAML. Feel free to convert them using a tool [like this one](https://onlineyamltools.com/convert-yaml-to-json) if you want some JSON.
+
 I would advise you to create a folder where you could create as many DevDash dashboard as you need.
 
 For example:
