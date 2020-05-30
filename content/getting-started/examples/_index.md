@@ -3,11 +3,81 @@ title: Examples
 weight: 1000
 ---
 
-Here are some simple examples to get you started. Some more complex and real use cases are [available as well](/getting-started/use-cases/).
+Here are some simple examples which will show you how to create dashboards with DevDash, step by step. 
+
+If you want real use cases are [available as well](/getting-started/use-cases/).
+
+## System Monitoring
+
+If you run a Linux distribution, you can create a simple dashboard monitoring your system. It might work with macOS too.
+
+Notice that you can run any command line and display the output in DevDash! It's how the output of `ls` is displayed here. Running a script works too!
+
+![img](/img/screenshot/lh-1.png)
+
+{{%expand "Show me the config!" %}}
+```yaml
+---
+projects:
+  - name: My Sweet Localhost
+    # No need of services here
+    # services:
+    widgets:
+      - row:
+          - col:
+              size: "8"
+              elements:
+                - name: lh.bar_memory
+                  options:
+                    unit: "mb"
+                    metrics: "MemTotal,MemFree,MemAvailable,Buffers,Cached,Active"
+                    color: yellow
+                    bar_gap: 1
+                    bar_width: 9
+                - name: lh.table_disk
+                  options:
+                    color: magenta
+                - name: lh.table
+                  options:
+                    title: " Output of ls "
+                    command: "ls"
+                    color: red
+          - col:
+              size: "4"
+              elements:
+                - name: lh.box_uptime
+                  options:
+                    color: blue
+                - name: lh.box_load
+                  options:
+                    color: blue
+                - name: lh.box_processes
+                  options:
+                    color: blue
+                - name: lh.box_cpu_rate
+                  options:
+                    color: cyan
+                - name: lh.box_memory_rate
+                  options:
+                    color: cyan
+                - name: lh.box_swap_rate
+                  options:
+                    color: cyan
+                - name: lh.box_net_io
+                  options:
+                    color: green
+                    unit: "mb"
+                - name: lh.box_disk_io
+                  options:
+                    color: green
+                    unit: "gb"
+```
+{{% /expand%}}
+
 
 ## Google Analytics
 
-For the first example, two services are used: the [monitoring service](/reference/services/monitoring/) and the [Google Analytics service](/reference/services/google-analytics/).
+For this example, we use two services: the [monitoring service](/reference/services/monitoring/) and the [Google Analytics service](/reference/services/google-analytics/).
 
 It will show how to use two different way or providing the [size](/display/size/) (width) of any widget (using a number from 1 to 12, or a T-shirt size).
 
@@ -70,7 +140,7 @@ projects:
 
 -------
 
-The second example shows how to configure the display of your widgets, using options like `border_color`, `text_color`, `bar_width` or `bar_height`. 
+The second example with Google Analytics shows how to configure the display of your widgets, using options like `border_color`, `text_color`, `bar_width` or `bar_height`. 
 
 It introduces as well the `general` configuration, where you can modify the default the keyboard shortcut to quit devdash (`C-c` is ctrl-c) as well as the refresh cycle of your dashboard's data, in seconds.
 
@@ -142,7 +212,6 @@ projects:
 {{% /expand%}}
 
 ![img](/img/screenshot/ga-2.png)
-
 
 ## Google Search Console
 

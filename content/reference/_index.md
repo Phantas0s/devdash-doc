@@ -17,6 +17,16 @@ If you're unsure how a configuration file should look like, you can look at simp
 
 Many screenshot are included for you to see directly how DevDash can look like.
 
+## Loading a Configuration
+
+By default, devdash will search for a dashboard configuration in these folder, in that order:
+
+* The current directory you're in
+* `$XDG_HOME_CONFIG/devdash/`
+* `$HOME/.config/devdash/`
+
+You can display your dashboard as follow: `devdash -c <dashboard_name>`. You can give an absolute path instead of a filename, too.
+
 ## DevDash Widgets
 
 Each widget depend on a service: the name of the widget will determine the service links to it.
