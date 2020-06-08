@@ -37,7 +37,7 @@ The port `22` is important! Without it, it won't work.
 | Name                 | Description                                               |
 | -------------------- | --------------------------------------------------------- |
 | rh.box_uptime        | Total time the computer has been available                |
-| rh.box_load          | CPU load                                                  |
+| rh.box_load          | CPU load (from boot)                                      |
 | rh.box_net_io        | Network IO                                                |
 | rh.box_disk_io       | Disk IO                                                   |
 | rh.bar_memory        | Display memory information                                |

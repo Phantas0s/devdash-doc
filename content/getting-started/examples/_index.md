@@ -3,13 +3,15 @@ title: Examples
 weight: 1000
 ---
 
-Here are some simple examples which will show you how to create dashboards with DevDash, step by step. 
+Here are some simple examples which will show you how to create dashboards with DevDash, step by step.
 
-If you want real use cases are [available as well](/getting-started/use-cases/).
+If you want real use case I use myself, [it's here](/getting-started/use-cases/).
+
+You can find here a [high level explanation of the config system](/reference/), if you wonder what's the heck is all of that.
 
 ## System Monitoring
 
-If you run a Linux distribution, you can create a simple dashboard monitoring your system. It might work with macOS too.
+If you run a Linux distribution, you can create a simple dashboard monitoring your system. It might work with macOS, too.
 
 Notice that you can run any command line and display the output in DevDash! It's how the output of `ls` is displayed here. Running a script works too!
 
@@ -20,8 +22,6 @@ Notice that you can run any command line and display the output in DevDash! It's
 ---
 projects:
   - name: My Sweet Localhost
-    # No need of services here
-    # services:
     widgets:
       - row:
           - col:
@@ -30,21 +30,32 @@ projects:
                 - name: lh.bar_memory
                   options:
                     unit: "mb"
-                    metrics: "MemTotal,MemFree,MemAvailable,Buffers,Cached,Active"
                     color: yellow
                     bar_gap: 1
-                    bar_width: 9
+                    bar_width: 10
                 - name: lh.table_disk
                   options:
                     color: magenta
                 - name: lh.table
                   options:
-                    title: " Output of ls "
-                    command: "ls"
+                    title: " Display ouput of ls -lah "
+                    command: "ls -lah test | tail -n +2"
                     color: red
           - col:
               size: "4"
               elements:
+                - name: lh.gauge_cpu_rate
+                  options:
+                    color: yellow
+                    bar_color: green
+                - name: lh.gauge_memory_rate
+                  options:
+                    color: yellow
+                    bar_color: green
+                - name: lh.gauge_swap_rate
+                  options:
+                    color: yellow
+                    bar_color: green
                 - name: lh.box_uptime
                   options:
                     color: blue
@@ -54,15 +65,6 @@ projects:
                 - name: lh.box_processes
                   options:
                     color: blue
-                - name: lh.box_cpu_rate
-                  options:
-                    color: cyan
-                - name: lh.box_memory_rate
-                  options:
-                    color: cyan
-                - name: lh.box_swap_rate
-                  options:
-                    color: cyan
                 - name: lh.box_net_io
                   options:
                     color: green
@@ -71,9 +73,25 @@ projects:
                   options:
                     color: green
                     unit: "gb"
+                - name: lh.box
+                  options:
+                    color: green
+                    command: "ls"
+                - name: lh.gauge
+                  options:
+                    color: green
+                    bar_color: magenta
+                    command: "sh ./data.sh"
+                - name: lh.bar
+                  options:
+                    color: green
+                    headers: "header1,header2,header3,header4"
+                    bar_color: magenta
+                    command: "sh ./data-bar.sh"
 ```
 {{% /expand%}}
 
+You can go [here if you want to know more about the host service}(/reference/services/host/).
 
 ## Google Analytics
 
@@ -140,9 +158,7 @@ projects:
 
 -------
 
-The second example with Google Analytics shows how to configure the display of your widgets, using options like `border_color`, `text_color`, `bar_width` or `bar_height`. 
-
-It introduces as well the `general` configuration, where you can modify the default the keyboard shortcut to quit devdash (`C-c` is ctrl-c) as well as the refresh cycle of your dashboard's data, in seconds.
+We introduce here the `general` configuration, where you can modify the default keyboard shortcuts to quit devdash (`C-c` is ctrl-c) as well as the refresh cycle of your dashboard's data, in seconds.
 
 You can see a [complete reference of these properties here](/reference/general/).
 

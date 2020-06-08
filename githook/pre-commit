@@ -1,0 +1,3 @@
+!#/bin/bash
+
+muffet -c 32 -t 50 http://localhost:1414
