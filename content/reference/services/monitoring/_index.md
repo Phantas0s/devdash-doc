@@ -1,6 +1,6 @@
 ---
 title: Monitoring
-weight: 2
+weight: 1
 ---
 
 ### Service configuration
