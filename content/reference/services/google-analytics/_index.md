@@ -50,8 +50,10 @@ Obviously, you need to have a Google Analytics account or Google Search account 
 | ga.bar_users                   | Count of users                                                           |
 | ga.bar_returning               | Count of returning users                                                 |
 | ga.bar_pages                   | Count of sessions (or any other metric like users) on specific page(s)   |
+| ga.bar_countries               | Count of sessions by countries                                           |
 | ga.bar                         | Count of theoretically any metrics from Google Analytics                 |
 | ga.bar_new_returning           | Count of new and returning users                                         |
+| ga.bar_devices                 | Count of sessions per devices (desktop, mobile, tablet)                  |
 | ga.table_pages                 | Display chosen data about pages                                          |
 | ga.table_traffic_sources       | Display Data about traffic sources                                       |
 | ga.table                       | Display theoretically any metrics from Google Analytics                  |
