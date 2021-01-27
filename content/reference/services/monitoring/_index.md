@@ -15,7 +15,7 @@ weight: 1
 
 | Name                     | Description                                                                                                        |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| mon.box_availability     | Send an HTTP request to the address specified in he service configuration and display the response's status code   |
+| mon.box_availability     | Send an HTTP request to the address specified in the service configuration and display the response's status code  |
 
 ##### Data Options
 
