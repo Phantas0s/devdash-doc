@@ -3,7 +3,7 @@ title: Monitoring
 weight: 1
 ---
 
-### Service configuration
+## Service configuration
 
 ```yml
     services:
@@ -11,13 +11,16 @@ weight: 1
         address: "https://www.my-website.net"
 ```
 
-### Widgets available
+## Widgets available
 
 | Name                     | Description                                                                                                        |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | mon.box_availability     | Send an HTTP request to the address specified in he service configuration and display the response's status code   |
 
-##### Data Options
+## Widget Options
 
-None.
+### Box Widgets
 
+| Name      | Description                    | Example                  |
+| --------- | ------------------------------ | ------------------------ |
+| address   | Override the service's address | https://www.google.com   |
