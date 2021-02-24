@@ -31,6 +31,7 @@ weight: 6
     services:
       google_search_console:
         keyfile: goanalytics-abc123.json
+        address: https://thevaluable.dev
 ```
 
 ## Widgets available
