@@ -19,13 +19,18 @@ Many screenshot are included for you to see directly how DevDash can look like.
 
 ## Loading a Configuration
 
-By default, devdash will search for a dashboard configuration in these folder, in that order:
+By default, DevDash will search for a dashboard configuration (and the authorization files you might need, like a JWT) in these folders in that order:
 
 * The current directory you're in
-* `$XDG_HOME_CONFIG/devdash/`
-* `$HOME/.config/devdash/`
+* `$XDG_CONFIG_HOME/devdash/`
 
 You can display your dashboard as follow: `devdash -c <dashboard_name>`. You can give an absolute path instead of a filename, too.
+
+The value of `XFG_CONFIG_HOME` depends of your OS:
+
+* **Unix systems**: `~/.config`
+* **macOS**: `~/Library/Application Support`
+* **Windows**: `%LOCALAPPDATA%`
 
 ## DevDash Widgets
 
