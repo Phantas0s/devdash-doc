@@ -12,3 +12,7 @@ To see how to create a dashboard configuration, [it's over there](/getting-start
 ## Listing Available Dashboards
 
 `devdash list` will list every dashboard you've already created.
+
+## Version
+
+`devdash version` output the current version.
