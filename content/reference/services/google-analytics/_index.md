@@ -39,6 +39,8 @@ Obviously, you need to have a Google Analytics account or Google Search account 
         view_id: 456789123
 ```
 
+You can also use the environment variable `DEVDASH_GA_KEYFILE` to store the keyfile's filename. In that case, you only need to precise the `view_id` in the config file.
+
 ## Widgets available
 
 | Name                           | Description                                                              |

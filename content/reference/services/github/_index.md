@@ -23,6 +23,10 @@ weight: 3
         repository: devdash
 ```
 
+You can also use the environment variable `DEVDASH_GITHUB_TOKEN` to store the token. In that case, you only need to precise the `owner` in the config file. 
+
+The `repository` is not mandatory if you precise it in each widget.
+
 ## Widgets available
 
 | Name                      | Description                                                                       | Comment                                                                                     |
