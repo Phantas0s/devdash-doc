@@ -7,7 +7,7 @@ weight: 5
 
 Obviously, you need to have a Google Analytics account or Google Search account to access these two services.
 
-### Downloading the authorization JSON file 
+### Downloading the keyfile (authorization JSON file)
 
 (You don't need to repeat this step if you already did it when configuring Google Search Console)
 

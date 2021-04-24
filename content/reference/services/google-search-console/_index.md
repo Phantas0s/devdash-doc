@@ -5,7 +5,7 @@ weight: 6
 
 ## Authorization
 
-### Downloading the authorization JSON file 
+### Downloading the keyfile (authorization JSON file)
 
 (You don't need to repeat this step if you already did it when configuring Google Analytics)
 
