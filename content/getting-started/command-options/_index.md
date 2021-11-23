@@ -1,6 +1,6 @@
 ---
-title: Installation
-weight: 15
+title: Command Options
+weight: 20
 ---
 
 ## General
